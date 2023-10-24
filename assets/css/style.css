@@ -203,3 +203,15 @@ footer {
   color: white;
   margin-bottom: 16px;
 }
+
+.forms {
+  font-weight: bold;
+  margin-top: 35px;
+}
+
+.input-forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
