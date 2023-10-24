@@ -18,26 +18,49 @@ body {
   background-blend-mode: multiply, multiply;
   font-size: 100%;
   background-size: 300% 300%;
-  animation: animateBack 5s infinite alternate-reverse;
+  /*animation: animateBack 5s infinite alternate-reverse;*/
 }
 
-header nav .navbar {
-  background-color: rgb(226, 43, 43);
+header {
+  background-color: rgb(151, 34, 34);
+  height: 100px;
+  color: #fff;
 }
 
-.navbar-nav .active:hover {
-  background-color: brown;
-  color: white;
-  transition: 0.9s;
-}
-
-.navbar i {
+.cabecalho {
   padding: 10px;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
 
-.navbar i:hover {
-  color: black;
-  background-color: brown;
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.menu ul,
+.menu li {
+  list-style: none;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  border-bottom: 5px solid #000;
 }
 
 footer {
@@ -48,11 +71,6 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-.footer-alan i:hover {
-  color: brown;
-  cursor: pointer;
 }
 
 .conteudo {
@@ -99,7 +117,7 @@ footer {
 
 .conteudo-principal-imagem {
   height: 200px;
-  border: 2px solid white;
+  border: 5px solid white;
   border-radius: 60%;
 }
 
@@ -130,46 +148,58 @@ footer {
   font-size: 18px;
   font-weight: 300;
   color: white;
+  text-align: justify;
 }
 
-.conteudo-secundario-paragrafo-tec {
-  font-family: "Sarala", sans-serif;
-  font-size: 50px;
-  font-weight: 300;
-  color: rgb(4, 0, 0);
+.formacao {
+  margin-bottom: 48px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
 }
 
-.conteudo-secundario-paragrafo-tec:hover {
+.formacao :hover {
+  background-color: brown;
   cursor: pointer;
-  color: brown;
 }
 
-.conteudo-principal-imagem {
-  animation-name: fade;
-  animation-duration: 900ms;
+.formacao-titulo {
+  padding-top: 48px;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 16px;
 }
 
-.conteudo-secundario {
-  animation-name: move;
-  animation-duration: 1000ms;
-  animation-delay: 250ms;
-  animation-fill-mode: backwards;
+.titulacao {
+  border-top: 0.9px solid white;
+  padding-top: 48px;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 16px;
 }
 
-.conteudo-principal-escrito {
-  animation-name: dif;
-  animation-duration: 1000ms;
-  animation-delay: 250ms;
-  animation-fill-mode: backwards;
+.portfolio {
+  margin-bottom: 48px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
 }
 
-.squares li {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.15);
-  display: block;
-  position: absolute;
-  bottom: -40px;
-  animation: up 2s infinite;
-  animation-direction: reverse;
+.portfolio-titulo {
+  padding-top: 48px;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 16px;
 }
